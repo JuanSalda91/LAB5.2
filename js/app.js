@@ -29,7 +29,7 @@ usernameInput.minLength = 3;
 passwordInput.required = true;
 passwordInput.minLength = 8;
 
-confirmPasswordInput = true;
+confirmPasswordInput.required = true;
 
 // --- username validation function --- //
 function validateUserName() {
