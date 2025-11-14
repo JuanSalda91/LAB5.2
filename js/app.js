@@ -37,7 +37,7 @@ function validateUserName() {
 
     if (usernameInput.validity.valueMissing) {
         message = 'Username is required.';
-    } else if (usernameInput.validy.tooShort) {
+    } else if (usernameInput.validity.tooShort) {
         message = `Username must be at least ${usernameInput.minLength} characters.`;
     }
 
@@ -90,6 +90,8 @@ function validatePassword() {
 
 // --- Confirm password validation function--- //
 function validatePasswordConfirmation() {
+    let message = '';
+    
     if (confirmPasswordInput.validity.valueMissing) {
         message = 'Please confirm your password.'
     } else if (confirmPasswordInput.value !== passwordInput.value) {
